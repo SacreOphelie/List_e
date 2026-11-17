@@ -1,0 +1,42 @@
+// Typo 
+// Borel
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+// Comfortaa
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@mixin titre($taille: 40px,$align: left){
+    font-family: 'Comfortaa', sans-serif;
+    font-size: $taille;
+    text-align: $align;
+    text-decoration: none;
+    font-weight: bolder;
+    text-wrap: wrap;
+    color: $couleur-sombre;
+}
+
+@mixin texte($taille: 16px,$align: left, $weight: 400, $couleur: $couleur-sombre){
+    font-family: 'Comfortaa', sans-serif;
+    font-size: $taille;
+    text-align: $align;
+    text-decoration: none;
+    font-weight: $weight;
+    color: $couleur;
+    text-wrap: wrap;
+}
+
+@mixin bouton($taille: 20px,$align: center){
+    font-family: 'Borel', sans-serif;
+    font-size: $taille;
+    text-align: $align;
+    text-decoration: none;
+    font-weight: 400;
+    color: $couleur-sombre;
+}
+
+// Couleurs
+
+$couleur-primaire:#FD572F;
+$couleur-secondaire:#FF8196;
+$couleur-terciaire:#FCDEB8;
+$couleur-sombre:#251605;
+$couleur-claire:#FBF2E1;

@@ -1,19 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
-  },
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
+  reactCompiler: true,
+  sassOptions: {
+    includePaths: ["src/styles"],
+    // Colle ce code en haut de TOUS les fichiers .scss automatiquement
+    additionalData: `@use "variables" as *;`,
   },
 };
 

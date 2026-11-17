@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div className="page">
       <h1>Welcome to List.e</h1>
     </div>
   );

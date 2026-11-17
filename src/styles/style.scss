@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    background-color: $couleur-primaire;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
