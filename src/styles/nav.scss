@@ -1,0 +1,22 @@
+nav{
+    position: fixed;
+    padding: $padding-medium 0;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    // background-color: $couleur-secondaire;
+    z-index: $z-index-max;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        display: flex;
+        list-style: none;
+        gap:$gap-large;
+        li{
+            a{
+                @include texte($taille:20px,$weight:600);
+            }
+        }
+    }
+}
