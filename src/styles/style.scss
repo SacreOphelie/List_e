@@ -47,3 +47,12 @@
         fill:$couleur-sombre;
     }
 }
+
+.icones{
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    path{
+        fill:$couleur-claire;
+    }
+}

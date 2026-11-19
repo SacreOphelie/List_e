@@ -42,12 +42,14 @@ $couleur-sombre:#251605;
 $couleur-claire:#FBF2E1;
 
 // Padding
+$padding-xsmall: 5px;
 $padding-small: 10px;
 $padding-medium: 20px;
 $padding-large: 50px;
 $padding-xlarge: 100px;
 
 // Gap
+$gap-xsmall: 5px;
 $gap-small: 10px;
 $gap-medium: 20px;
 $gap-large: 40px;
@@ -59,7 +61,7 @@ $border-radius-large: 50px;
 $rayon-onglet: 20px;
 
 // z-index
-$z-index-nul: 0;
+$z-index-nul: -1;
 $z-index-low: 1;
 $z-index-medium: 10;
 $z-index-high: 100;

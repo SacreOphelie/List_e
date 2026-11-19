@@ -2,6 +2,7 @@
 
 import '@/styles/nav.scss';
 import Logo from '@/components/Logo';
+import IconeCompte from '@/components/icones/Compte';
 import Link from 'next/link';
 import { useRef,useLayoutEffect,useState } from 'react';
 
@@ -37,7 +38,7 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-        <div className="nav-compte">Compte</div>
+        <div className="nav-compte"><IconeCompte /></div>
     </nav>
   );
 }
