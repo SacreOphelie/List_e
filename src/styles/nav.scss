@@ -13,9 +13,44 @@ nav{
         display: flex;
         list-style: none;
         gap:$gap-large;
+        height: 100%;
         li{
+            position:relative;
+            padding: 0 $padding-medium;
             a{
                 @include texte($taille:20px,$weight:600);
+                z-index:$z-index-low;
+                position:relative;
+            }
+            &.active{
+                 // corps de l'onglet : seuls les coins du bas sont arrondis
+                &::before{
+                    content:'';
+                    display:block;
+                    position:absolute;
+                    top:-25px;
+                    left:0;
+                    width:100%;
+                    height:60px;
+                    background-color:$couleur-primaire;
+                    z-index:$z-index-nul;
+                    border-radius:0 0 $rayon-onglet $rayon-onglet;
+                }
+
+                // les deux "oreilles" concaves en haut, de chaque côté
+                &::after{
+                    content:'';
+                    display:block;
+                    position:absolute;
+                    top:-25px;
+                    left:-$rayon-onglet;
+                    width:calc(100% + #{$rayon-onglet * 2});
+                    height:$rayon-onglet;
+                    z-index:$z-index-nul;
+                    background:
+                        radial-gradient(circle at 0 100%, transparent $rayon-onglet - 1px, $couleur-primaire $rayon-onglet) left top / $rayon-onglet $rayon-onglet no-repeat,
+                        radial-gradient(circle at 100% 100%, transparent $rayon-onglet - 1px, $couleur-primaire $rayon-onglet) right top / $rayon-onglet $rayon-onglet no-repeat;
+                }
             }
         }
     }

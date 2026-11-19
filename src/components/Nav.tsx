@@ -7,7 +7,7 @@ export default function Nav() {
     <nav className="wrapper">
         <div className="nav-logo"><Logo /></div>
         <ul>
-            <li><Link href="/">Accueil</Link></li>
+            <li className="active"><Link href="/">Accueil</Link></li>
             <li><Link href="/">Comment ça marche ?</Link></li>
             <li><Link href="/">Thèmes</Link></li>
             <li><Link href="/">FAQ</Link></li>
